@@ -25,7 +25,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('https://www.transparenttextures.com/patterns/black-felt.png'), black;
+    background: url('https://www.transparenttextures.com/patterns/absurdity.png'), black;
     z-index: -1;
     animation: stars 20s linear infinite;
 }
