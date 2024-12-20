@@ -30,5 +30,23 @@
         </div>
         <a href="https://altay.cx/projects" class="button">Projects</a>
     </div>
+    <script>
+        const createStar = () => {
+            const star = document.createElement("div");
+            star.classList.add("star");
+            const size = Math.random() * 3 + 2;
+            const left = Math.random() * window.innerWidth;
+            const duration = Math.random() * 2 + 1;
+            star.style.width = `${size}px`;
+            star.style.height = `${size}px`;
+            star.style.left = `${left}px`;
+            star.style.animationDuration = `${duration}s`;
+            document.body.appendChild(star);
+            setTimeout(() => {
+                star.remove();
+            }, duration * 1000);
+        };
+        setInterval(createStar, 50);
+    </script>
 </body>
 </html>
