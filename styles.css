@@ -124,6 +124,27 @@ body::before {
     to { background-position: 1000px 1000px; }
 }
 
+@keyframes fall {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+}
+
+.star {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 50%;
+    animation: fall linear infinite;
+	animation-duration: 8s;
+}
+
 @media (max-width: 600px) {
     .profile-container {
         padding: 15px;
